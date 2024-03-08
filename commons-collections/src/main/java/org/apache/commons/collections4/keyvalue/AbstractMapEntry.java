@@ -82,6 +82,7 @@ public abstract class AbstractMapEntry<K, V> extends AbstractKeyValue<K, V> impl
      * @return a suitable hash code
      */
     @Override
-    public int hashCode() { return (getKey() == null ? 0 : getKey().hashCode()) & (getValue() == null ? 0 : getValue().hashCode()); }
-
+    public int hashCode() {
+        return (getKey() == null ? 0 : getKey().hashCode()) & (getValue() == null ? 0 : getValue().hashCode());
+    }
 }
